@@ -1,6 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
 body {
-  background-color: hsl(185, 75%, 39%);
+  height: 90vh;
+}
+
+body {
+  /* background-color: hsl(185, 75%, 39%); */
   background-image: url("images/Desktop.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.container {
+  /* border: solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /* border: solid blue; */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 40%;
+  height: 60%;
+
+  border-radius: 20px;
+}
+
+.top-part {
+  /* background-color: red; */
+  background-image: url("images/Oval.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-grow: 2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.middle-part {
+  background-color: white;
+  display: flex;
+  flex-grow: 2;
+}
+
+.bottom-part {
+  border: solid transparent;
+  border-top: solid #e8e9ec;
+  background-color: white;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.bottom-subpart {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-title {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2e3349;
+}
+
+.sub-title {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #6b7082;
 }
