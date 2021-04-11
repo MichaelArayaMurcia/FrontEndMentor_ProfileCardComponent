@@ -3,16 +3,16 @@
   margin: 0;
 }
 
-html,
-body {
-  height: 90vh;
+html {
+  background: url(images/Desktop.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-  /* background-color: hsl(185, 75%, 39%); */
-  background-image: url("images/Desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 90vh;
 }
 
 .container {
@@ -21,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .card {
@@ -32,8 +33,8 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  width: 40%;
-  height: 60%;
+  min-width: 20%;
+  min-height: 60%;
 
   border-radius: 20px;
 }
@@ -53,6 +54,57 @@ body {
   background-color: white;
   display: flex;
   flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.image-victor {
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 70px;
+}
+
+.image-victor img {
+  border-radius: 100px;
+  background-color: white;
+  border: solid white;
+  border-width: 6px;
+}
+
+.image-victor h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.image-victor h3 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b7082;
+  margin-top: 10px;
+}
+
+.image-victor h4 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #6b7082;
+  margin-top: 25px;
+}
+
+.image-victor div {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 130px;
 }
 
 .bottom-part {
